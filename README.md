@@ -15,8 +15,27 @@ Na construção do código foram utilizadas listas, variáveis de controle e la�
   end = 0 # Controla o fim do loop geral
   first = 0 # Controla a entrada apenas do primeiro item a uma condição
   max_prioridade = 0 # Controla o valor da maior prioridade entre os processos
-  max_id = 20 # Controla qual processo tem a maior prioridade
-  
+  max_id = 20 # Controla qual processo tem a maior prioridade  
+```
+
+> Processos
+```
+  # Todos os processos possuem prioridade randômica
+  processos = list() # Criação da lista de processos
+  # Simulação de falha de coordenação em um processo randômico
+  processo_inicial = random.randint(1, 9)
+  print("Processo "+ str(processo_inicial) +" detectou falha de coordenação")
+  #Adição do primeiro processo a lista de processos
+  processos.append({'id': processo_inicial, 'prioridade': random.randint(1, 10) })
+
+  #Adição do restante dos processos
+  for i in range(9):
+    if(i >= processo_inicial):
+      num_prio = random.randint(1, 10)
+      processos.append({'id': i+1, 'prioridade': num_prio })
+    else:
+      num_prio = random.randint(1, 10)
+      processos.append({'id': i, 'prioridade': num_prio })  
 ```
 
 
