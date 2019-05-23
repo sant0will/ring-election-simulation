@@ -1,5 +1,6 @@
 # ring-election-simulation
 Algoritmo que simula o funcionamento da eleição em anel em python.
+> Demonstração de funcionamento
 [Demo](https://repl.it/@sant0will/ring-election)
 
 # Eleição em anel
@@ -9,4 +10,7 @@ Ao receber uma mensagem de eleição, um processo deve comparar o identificador 
 vizinho.
 
 # Funcionamento
+Na construção do código foram utilizadas listas, variáveis de controle e laços de repetição.
+
+
 
