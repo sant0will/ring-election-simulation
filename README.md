@@ -1,5 +1,6 @@
 # ring-election-simulation
-Algoritmo que simula o funcionamento da eleição em anel em python
+Algoritmo que simula o funcionamento da eleição em anel em python.
+[Demo](https://repl.it/@sant0will/ring-election)
 
 # Eleição em anel
 Quando um processo identificar a ausência de um líder (falha), ele inicia o processo de eleição primeiramente marcando-se como participante e em seguida enviando uma mensagem de eleição contendo seu identificador para seu vizinho no anel.
@@ -8,3 +9,4 @@ Ao receber uma mensagem de eleição, um processo deve comparar o identificador 
 vizinho.
 
 # Funcionamento
+
